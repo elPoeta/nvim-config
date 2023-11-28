@@ -1,1 +1,1 @@
-require "elpoeta.options"
+require "elpoeta.core"
