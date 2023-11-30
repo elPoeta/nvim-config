@@ -20,7 +20,9 @@ local opts = {
   defaults = {
     lazy = true
   },
-  install = {},
+  install = {
+    colorscheme = { "catppuccin" },
+  },
   rtp = {
     disabled_plugins = {
       "gzip",
