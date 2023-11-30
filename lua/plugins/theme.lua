@@ -44,7 +44,7 @@ return {
         }
       end,
       integrations = {
-       -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+        nvimtree = true,
       },  
     })
     vim.cmd("colorscheme catppuccin")
