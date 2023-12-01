@@ -1,6 +1,7 @@
 local mapkey = require("util.keymapper").mapkey
-
-local config = {
+local config = function()
+	local telescope = require("telescope")
+	telescope.setup({
   defaults = {
     vimgrep_arguments = {
       "rg",
@@ -56,7 +57,8 @@ local config = {
       case_mode = "smart_case",
     },
   },
-}
+})
+end  
 
 return {
 	"nvim-telescope/telescope.nvim",
