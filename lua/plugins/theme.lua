@@ -45,6 +45,12 @@ return {
       end,
       integrations = {
         nvimtree = true,
+        treesitter = true,
+        notify = false,
+        mini = {
+          enabled = true,
+          indentscope_color = "",
+        },
       },  
     })
     vim.cmd("colorscheme catppuccin")
