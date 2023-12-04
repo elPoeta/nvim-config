@@ -45,6 +45,7 @@ return {
       end,
       integrations = {
         nvimtree = true,
+        gitsigns = true,
         treesitter = true,
         notify = false,
         mini = {
