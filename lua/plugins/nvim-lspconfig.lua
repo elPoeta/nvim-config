@@ -20,6 +20,13 @@ local config = function()
 		filetypes = { "json", "jsonc" },
 	})
   
+ -- css
+ lspconfig.cssls.setup({
+ 	capabilities = capabilities,
+ 	on_attach = on_attach,
+ 	filetypes = { "css" },
+ })
+
   -- python
 	lspconfig.pyright.setup({
 		capabilities = capabilities,
@@ -55,7 +62,6 @@ local config = function()
 		filetypes = {
 			"typescriptreact",
 			"javascriptreact",
-			"css",
 			"sass",
 			"scss",
 			"less",
